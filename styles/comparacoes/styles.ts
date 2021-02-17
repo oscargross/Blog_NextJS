@@ -9,7 +9,7 @@ export const Container = styled.main`
   animation-duration: 500ms;
 
   a:first-of-type article {
-    border: solid 1px #9C0000;
+    border: solid 1px #000000;
   }
 
   @media (max-width: 800px) {
@@ -22,14 +22,15 @@ export const Post = styled.article`
  
   padding: 20px 120px;
   border-radius: 6px;
-  background: linear-gradient(90deg, rgba(42,0,0,1) 19%, rgba(94,6,6,1) 67%, rgba(121,9,9,1) 87%);
-    display: flex;
+  background: linear-gradient(67deg, rgb(226, 228, 230), rgb(255, 255, 255));
+  display: flex;
   margin-bottom: 20px;
   align-items: center;
+  box-shadow: 8px 3px 3px black;
 
   img {
-    width: 320px;
-    height: 180px;
+    max-width: 320px;
+    max-height: 180px;
     border-radius: 6px;
     display: inline;
     margin-right: 15px;
@@ -43,8 +44,8 @@ export const Post = styled.article`
     padding: 10px 10px 0 10px;
 
     img {
-      width: 100%;
-      height: 100%;
+         max-width: 320px;
+    max-height: 180px;
       margin: 0 auto;
     }
   }
@@ -52,14 +53,14 @@ export const Post = styled.article`
 
 export const Text = styled.section`
   h1 {
-    color: #fff;
+    color: black;
     font-weight: 700;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 30px;
   }
 
   p {
-    color: #fff;
+    color: black;
     font-size: 18px;
   }
 
